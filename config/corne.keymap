@@ -32,7 +32,7 @@
       require-prior-idle-ms = <100>;
       flavor = "balanced";
       bindings = <&kp>, <&kp>;
-      hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 36 37 38 39 40 41>; // right hand + thumbs
+      hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 36 37 38 39 40 41>;
     };
     hm_r: homerow_mods_right {
       compatible = "zmk,behavior-hold-tap";
@@ -42,7 +42,23 @@
       require-prior-idle-ms = <100>;
       flavor = "balanced";
       bindings = <&kp>, <&kp>;
-      hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38 39 40 41>; // left hand + thumbs
+      hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38 39 40 41>;
+    };
+    lt_sl: layer_tap_sticky_layer {
+      compatible = "zmk,behavior-hold-tap";
+      #binding-cells = <2>;
+      tapping-term-ms = <200>;
+      quick-tap-ms = <200>;
+      flavor = "balanced";
+      bindings = <&mo>, <&sl>;
+    };
+    lt_tog: layer_tap_toggle_layer {
+      compatible = "zmk,behavior-hold-tap";
+      #binding-cells = <2>;
+      tapping-term-ms = <200>;
+      quick-tap-ms = <200>;
+      flavor = "balanced";
+      bindings = <&mo>, <&tog>;
     };
     space_lt: space_layer_tap {
       compatible = "zmk,behavior-hold-tap";
@@ -72,9 +88,9 @@
       display-name = "Base";
       bindings = <
         &kp LBKT   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp RBKT
-        &mt LCTRL ESC &hm_l LSHIFT A &kp S &hm_l LALT D &hm_l LGUI F &hm_l MEH G   &hm_r MEH H &hm_r RGUI J  &hm_r RALT K  &kp L   &hm_r RSHIFT SEMI &mt LCTRL SQT
-        &kp LSHFT &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RSHFT
-        &lt 2 TAB &space_lt 1 SPACE &lt 4 ESC      &mt RSHIFT RET &lt 1 BSPC &lt 3 BSPC 
+        &mt LCTRL ESC &hm_l LSHIFT A &kp S &hm_l LALT D &hm_l LGUI F &hm_l MEH G   &hm_r MEH H &hm_r RGUI J  &hm_r RALT K  &kp L   &kp SEMI &hm_r LCTRL SQT
+        &kp LSHIFT &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp LSHFT
+        &lt 2 TAB &kp SPACE &lt_sl 1 1      &mt LSHIFT RET &lt 1 BSPC &lt 3 ESC
       >;
     };
     lower_layer {
