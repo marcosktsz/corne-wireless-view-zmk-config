@@ -142,5 +142,14 @@
             layers = <DEF LOW RSE MED>;
         };
 
+        /* Critical layer activation - dual thumb cluster */
+        combo_critical_layer {
+            timeout-ms = <COMBO_TERM_SLOW>;
+            require-prior-idle-ms = <COMBO_IDLE_SLOW>;
+            key-positions = <36 41>; // LH2 RH2 (outer thumb keys)
+            bindings = <&mo 4>;  // Momentary activation of critical layer
+            layers = <DEF LOW RSE MED>;
+        };
+
     };
 };
