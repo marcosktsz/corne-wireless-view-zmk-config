@@ -37,47 +37,6 @@
     combos {
         compatible = "zmk,combos";
 
-        /* Horizontal combos - left hand */
-        combo_esc {
-            timeout-ms = <COMBO_TERM_FAST>;
-            require-prior-idle-ms = <COMBO_IDLE_FAST>;
-            key-positions = <2 3>;   // LT3 LT2
-            bindings = <&kp ESC>;
-            layers = <DEF LOW RSE MED>;
-        };
-
-        combo_tab {
-            timeout-ms = <COMBO_TERM_FAST>;
-            require-prior-idle-ms = <COMBO_IDLE_FAST>;
-            key-positions = <14 15>; // LM3 LM2
-            bindings = <&kp TAB>;
-            layers = <DEF LOW RSE MED>;
-        };
-
-        combo_cut {
-            timeout-ms = <COMBO_TERM_FAST>;
-            require-prior-idle-ms = <COMBO_IDLE_FAST>;
-            key-positions = <26 28>; // LB3 LB1
-            bindings = <&kp LG(X)>;  // Mac-style, use LC(X) for Linux/Windows
-            layers = <DEF LOW RSE MED>;
-        };
-
-        combo_copy {
-            timeout-ms = <COMBO_TERM_FAST>;
-            require-prior-idle-ms = <COMBO_IDLE_FAST>;
-            key-positions = <26 27>; // LB3 LB2
-            bindings = <&kp LG(C)>;  // Mac-style, use LC(C) for Linux/Windows
-            layers = <DEF LOW RSE MED>;
-        };
-
-        combo_paste {
-            timeout-ms = <COMBO_TERM_FAST>;
-            require-prior-idle-ms = <COMBO_IDLE_FAST>;
-            key-positions = <27 28>; // LB2 LB1
-            bindings = <&kp LG(V)>;  // Mac-style, use LC(V) for Linux/Windows
-            layers = <DEF LOW RSE MED>;
-        };
-
         /* Horizontal combos - right hand */
         combo_bspc {
             timeout-ms = <COMBO_TERM_FAST>;
@@ -143,71 +102,6 @@
             layers = <LOW>;  // On navigation/lower layer
         };
 
-        combo_lt {
-            timeout-ms = <COMBO_TERM_FAST>;
-            require-prior-idle-ms = <COMBO_IDLE_FAST>;
-            key-positions = <19 20>; // RM1 RM2
-            bindings = <&kp LT>;
-            layers = <RSE>;  // On raise layer
-        };
-
-        combo_gt {
-            timeout-ms = <COMBO_TERM_FAST>;
-            require-prior-idle-ms = <COMBO_IDLE_FAST>;
-            key-positions = <20 21>; // RM2 RM3
-            bindings = <&kp GT>;
-            layers = <RSE>;  // On raise layer
-        };
-
-        /* Vertical combos - left hand */
-        combo_at {
-            timeout-ms = <COMBO_TERM_SLOW>;
-            require-prior-idle-ms = <COMBO_IDLE_SLOW>;
-            key-positions = <2 14>;  // LT3 LM3
-            bindings = <&kp AT>;
-            layers = <DEF LOW RSE MED>;
-        };
-
-        combo_hash {
-            timeout-ms = <COMBO_TERM_SLOW>;
-            require-prior-idle-ms = <COMBO_IDLE_SLOW>;
-            key-positions = <3 15>;  // LT2 LM2
-            bindings = <&kp HASH>;
-            layers = <DEF LOW RSE MED>;
-        };
-
-        combo_dllr {
-            timeout-ms = <COMBO_TERM_SLOW>;
-            require-prior-idle-ms = <COMBO_IDLE_SLOW>;
-            key-positions = <4 16>;  // LT1 LM1
-            bindings = <&kp DLLR>;
-            layers = <DEF LOW RSE MED>;
-        };
-
-        combo_prcnt {
-            timeout-ms = <COMBO_TERM_SLOW>;
-            require-prior-idle-ms = <COMBO_IDLE_SLOW>;
-            key-positions = <5 17>;  // LT0 LM0
-            bindings = <&kp PRCNT>;
-            layers = <DEF LOW RSE MED>;
-        };
-
-        combo_grave {
-            timeout-ms = <COMBO_TERM_SLOW>;
-            require-prior-idle-ms = <COMBO_IDLE_SLOW>;
-            key-positions = <14 26>; // LM3 LB3
-            bindings = <&kp GRAVE>;
-            layers = <DEF LOW RSE MED>;
-        };
-
-        combo_bslh {
-            timeout-ms = <COMBO_TERM_SLOW>;
-            require-prior-idle-ms = <COMBO_IDLE_SLOW>;
-            key-positions = <15 27>; // LM2 LB2
-            bindings = <&kp BSLH>;
-            layers = <DEF LOW RSE MED>;
-        };
-
         combo_equal {
             timeout-ms = <COMBO_TERM_SLOW>;
             require-prior-idle-ms = <COMBO_IDLE_SLOW>;
@@ -224,36 +118,11 @@
             layers = <DEF LOW RSE MED>;
         };
 
-        /* Vertical combos - right hand */
-        combo_caret {
-            timeout-ms = <COMBO_TERM_SLOW>;
-            require-prior-idle-ms = <COMBO_IDLE_SLOW>;
-            key-positions = <6 18>;  // RT0 RM0
-            bindings = <&kp CARET>;
-            layers = <DEF LOW RSE MED>;
-        };
-
         combo_plus {
             timeout-ms = <COMBO_TERM_SLOW>;
             require-prior-idle-ms = <COMBO_IDLE_SLOW>;
             key-positions = <7 19>;  // RT1 RM1
             bindings = <&kp PLUS>;
-            layers = <DEF LOW RSE MED>;
-        };
-
-        combo_star {
-            timeout-ms = <COMBO_TERM_SLOW>;
-            require-prior-idle-ms = <COMBO_IDLE_SLOW>;
-            key-positions = <8 20>;  // RT2 RM2
-            bindings = <&kp STAR>;
-            layers = <DEF LOW RSE MED>;
-        };
-
-        combo_amps {
-            timeout-ms = <COMBO_TERM_SLOW>;
-            require-prior-idle-ms = <COMBO_IDLE_SLOW>;
-            key-positions = <9 21>;  // RT3 RM3
-            bindings = <&kp AMPS>;
             layers = <DEF LOW RSE MED>;
         };
 
@@ -273,20 +142,5 @@
             layers = <DEF LOW RSE MED>;
         };
 
-        combo_fslh {
-            timeout-ms = <COMBO_TERM_SLOW>;
-            require-prior-idle-ms = <COMBO_IDLE_SLOW>;
-            key-positions = <20 32>; // RM2 RB2
-            bindings = <&kp FSLH>;
-            layers = <DEF LOW RSE MED>;
-        };
-
-        combo_pipe {
-            timeout-ms = <COMBO_TERM_SLOW>;
-            require-prior-idle-ms = <COMBO_IDLE_SLOW>;
-            key-positions = <21 33>; // RM3 RB3
-            bindings = <&kp PIPE>;
-            layers = <DEF LOW RSE MED>;
-        };
     };
 };
