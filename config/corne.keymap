@@ -95,7 +95,7 @@
       bindings = <
         &kp LCTRL &trans   &trans &trans   &trans   &trans                              &kp EQUAL &kp PLUS &kp MINUS &kp UNDER &trans &trans
         &kp LCTRL &trans   &trans &trans   &trans   &trans                              &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp LBKT &kp RBKT
-        &trans &trans &trans &trans &trans &trans                                      &kp UNDER &kp PLUS  &kp LBRC  &kp RBRC &kp BSLH &kp TILDE
+        &trans &trans &trans &trans &trans &trans                                      &kp SEMI &kp COLON  &kp LESS_THAN  &kp GREATER_THAN &kp BSLH &kp TILDE
         &kp LGUI &trans   &kp SPACE   &kp LPAR   &kp RPAR    &kp RALT
       >;
     };
