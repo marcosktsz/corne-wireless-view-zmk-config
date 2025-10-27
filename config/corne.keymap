@@ -15,11 +15,9 @@
 };
 
 &lt {
-  tapping-term-ms = <135>;
+  tapping-term-ms = <150>;
   quick-tap-ms = <150>;
-  require-prior-idle-ms = <130>;
   hold-trigger-on-release;
-  flavor = "balanced";
 };
 
 #define MEH LG(LC(LALT))
