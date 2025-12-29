@@ -46,5 +46,14 @@
             layers = <DEF LOW RSE MED>;
         };
 
+        /* Tab key - ZX combo */
+        combo_tab {
+            timeout-ms = <COMBO_TERM_FAST>;
+            require-prior-idle-ms = <COMBO_IDLE_FAST>;
+            key-positions = <25 26>; // Z X
+            bindings = <&kp TAB>;
+            layers = <DEF LOW RSE MED>;
+        };
+
     };
 };
