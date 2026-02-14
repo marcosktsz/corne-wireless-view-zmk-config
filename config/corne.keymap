@@ -18,6 +18,7 @@
   tapping-term-ms = <150>;
   quick-tap-ms = <150>;
   hold-trigger-on-release;
+  require-prior-idle-ms = <100>;
 };
 
 #define MEH LG(LC(LALT))
