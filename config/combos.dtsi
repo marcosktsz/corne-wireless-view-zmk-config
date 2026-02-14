@@ -47,6 +47,14 @@
         };
 
         /* Tab key - ZX combo */
+        combo_media_layer {
+            timeout-ms = <100>;
+            require-prior-idle-ms = <COMBO_IDLE_SLOW>;
+            key-positions = <37 40>; // LH1 RH1 (middle thumb keys)
+            bindings = <&mo 3>;
+            layers = <DEF LOW RSE>;
+        };
+
         combo_tab {
             timeout-ms = <COMBO_TERM_FAST>;
             require-prior-idle-ms = <COMBO_IDLE_FAST>;
